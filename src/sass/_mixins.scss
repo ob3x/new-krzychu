@@ -1,0 +1,71 @@
+@use 'colors' as *;
+
+@mixin background {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+@mixin btn {
+	position: relative;
+	background-color: $black;
+	color: $white;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	transition: background-color 0.3s;
+	z-index: 0;
+}
+
+@mixin btnAnimation {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 0.1em solid $black;
+	transform: translateY(100%) scale(0);
+	transition: transform 0.3s;
+	content: '';
+	z-index: -1;
+}
+
+@mixin popup {
+	position: absolute;
+	top: 5.5em;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 3em;
+	text-align: center;
+	width: 30em;
+	background-color: rgba(255,255,255, .95);
+	border: 0.1em solid $black;
+}
+
+@mixin title {
+	padding: 1.2em 0 0.8em;
+	font-family: 'Bebas Neue', sans-serif;
+	font-size: 1.9rem;
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+	color: $black;
+}
+
+@mixin text {
+	font-size: 1.3rem;
+	color: $grey;
+	letter-spacing: 0.1em;
+	text-align: center;
+}
+
+@mixin textAnimation {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: $grey;
+	width: 100%;
+	height: 0.1em;
+	transform: scale(0);
+	transform-origin: right;
+	transition: transform 0.3s;
+	content: '';
+}
