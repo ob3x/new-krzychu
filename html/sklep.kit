@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.min.css">
+</head>
+
+<body>
+    <!-- @Include 'nav' -->
+    
+    <section class="firstBaner shopsite-baner">
+        <div class="firstBaner-hero"></div>
+        <div class="firstBaner-box wrapper">
+            <h2 class="firstBaner-box__title">Tytul baneru 1</h2>
+            <p class="firstBaner-box__text">Opis baneru z tytulem baneru nr 1</p>
+        </div>
+    </section>
+    <header class="road">
+        <ul class="road-list">
+            <a href="index.html" class="road-list__item-link">
+                <li class="road-list__item">Ravish</li>
+            </a>
+            <span class="road-list__span">/</span>
+            <a href="#" class="road-list__item-link">
+                <li class="road-list__item road-list__item-active">Nowa kolekcja</li>
+            </a>
+        </ul>
+    </header>
+    <section class="shopsite">
+        <div class="shopsite-title">
+            <h1 class="shopsite-title__text">Nowa kolekcja wiosna/lato 2024</h1>
+            <div class="shopsite-title__sort">
+                <span class="shopsite-title__sort-text">Sortuj:</span>
+                <select name="sort" id="" class="shopsite-title__sort--box">
+                    <option value="" class="shopsite-title__sort--box-option">Domyślnie</option>
+                    <option value="" class="shopsite-title__sort--box-option">Nowości</option>
+                    <option value="" class="shopsite-title__sort--box-option">Wyprzedaż</option>
+                    <option value="" class="shopsite-title__sort--box-option">Cena rosnąco</option>
+                    <option value="" class="shopsite-title__sort--box-option">Cena malejąco</option>
+                </select>
+                <div class="shopsite-title__sort-icon"></div>
+            </div>
+        </div>
+        <div class="shopsite-box">
+            <aside class="shopsite-left">
+                <h2 class="shopsite-left__title">Wybrane filtry:</h2>
+                <div class="shopsite-left__box">
+                    <h3 class="shopsite-left__titles">Cena</h3>
+                    <div class="shopsite__price">
+                        <div class="shopsite__price-slider">
+                            <div class="shopsite__price-slider--item"></div>
+                        </div>
+                        <div class="shopsite__price-range">
+                            <input type="range" class="shopsite__price-range--min" min="0" max="2000" value="500">
+                            <input type="range" class="shopsite__price-range--max" min="0" max="2000" value="1500">
+                        </div>
+                        <div class="shopsite__price-row">
+                            <div class="shopsite__price-box">
+                                <span class="shopsite__price-box--title">Min</span>
+                                <input type="number" class="shopsite__price-box--item min-input" value="500" step="100">
+                            </div>
+                            <div class="shopsite__price-box">
+                                <span class="shopsite__price-box--title">Max</span>
+                                <input type="number" class="shopsite__price-box--item max-input" value="1500"
+                                    step="100">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shopsite-left__box">
+                        <h3 class="shopsite-left__titles">Rozmiar</h3>
+                        <div class="shopsite__sizes">
+                            <button class="shopsite__sizes-item">S</button>
+                            <button class="shopsite__sizes-item">M</button>
+                            <button class="shopsite__sizes-item">L</button>
+                            <button class="shopsite__sizes-item">XL</button>
+                            <button class="shopsite__sizes-item">XXL</button>
+                        </div>
+                    </div>
+                    <div class="shopsite-left__box">
+                        <h3 class="shopsite-left__titles">Kolor</h3>
+                        <div class="shopsite-left__colors">
+                            <div class="shopsite-left__colors-item shopsite-left__colors-item--red"></div>
+                            <div class="shopsite-left__colors-item shopsite-left__colors-item--blue"></div>
+                            <div class="shopsite-left__colors-item shopsite-left__colors-item--purple"></div>
+                            <div class="shopsite-left__colors-item shopsite-left__colors-item--green"></div>
+                            <div class="shopsite-left__colors-item shopsite-left__colors-item--black"></div>
+                            <div class="shopsite-left__colors-item shopsite-left__colors-item--yellow"></div>
+                        </div>
+                    </div>
+                    <div class="shopsite-left__box">
+                        <h3 class="shopsite-left__titles">Materiał</h3>
+                    </div>
+                    <div class="shopsite-left__box">
+                        <h3 class="shopsite-left__titles">Wyprzedaż i oferty</h3>
+                    </div>
+            </aside>
+            <div class="shopsite-right">
+                <div class="shopsite-right__item">
+                    <div class="shopsite-right__item-heart"></div>
+                    <a class="shopsite-right__item-link" href="item.html">
+                        <div class="shopsite-right__item-top"></div>
+                        <div class="shopsite-right__item-bottom">
+                            <h3 class="shopsite-right__item-bottom--title">Czarna koszulka</h3>
+                            <p class="shopsite-right__item-bottom--text">Kolekcja 1</p>
+                            <p class="shopsite-right__item-bottom--price">199,99 PLN</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="shopsite-right__item">
+                    <div class="shopsite-right__item-heart"></div>
+                    <a class="shopsite-right__item-link" href="item.html">
+                        <div class="shopsite-right__item-top"></div>
+                        <div class="shopsite-right__item-bottom">
+                            <h3 class="shopsite-right__item-bottom--title">Biała koszulka</h3>
+                            <p class="shopsite-right__item-bottom--text">Kolekcja 4</p>
+                            <p class="shopsite-right__item-bottom--price">49,99 PLN</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="shopsite-right__item">
+                    <div class="shopsite-right__item-heart"></div>
+                    <a class="shopsite-right__item-link" href="item.html">
+                        <div class="shopsite-right__item-top"></div>
+                        <div class="shopsite-right__item-bottom">
+                            <h3 class="shopsite-right__item-bottom--title">Czerwona bluza</h3>
+                            <p class="shopsite-right__item-bottom--text">Kolekcja 3</p>
+                            <p class="shopsite-right__item-bottom--price">399,99 PLN</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="shopsite-right__item">
+                    <div class="shopsite-right__item-heart"></div>
+                    <a class="shopsite-right__item-link" href="item.html">
+                        <div class="shopsite-right__item-top"></div>
+                        <div class="shopsite-right__item-bottom">
+                            <h3 class="shopsite-right__item-bottom--title">Czarna koszulka</h3>
+                            <p class="shopsite-right__item-bottom--text">Kolekcja 1</p>
+                            <p class="shopsite-right__item-bottom--price">199,99 PLN</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="shopsite-right__item">
+                    <div class="shopsite-right__item-heart"></div>
+                    <a class="shopsite-right__item-link" href="item.html">
+                        <div class="shopsite-right__item-top"></div>
+                        <div class="shopsite-right__item-bottom">
+                            <h3 class="shopsite-right__item-bottom--title">Czarna koszulka</h3>
+                            <p class="shopsite-right__item-bottom--text">Kolekcja 1</p>
+                            <p class="shopsite-right__item-bottom--price">199,99 PLN</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="shopsite-right__item">
+                    <div class="shopsite-right__item-heart"></div>
+                    <a class="shopsite-right__item-link" href="item.html">
+                        <div class="shopsite-right__item-top"></div>
+                        <div class="shopsite-right__item-bottom">
+                            <h3 class="shopsite-right__item-bottom--title">Czarna koszulka</h3>
+                            <p class="shopsite-right__item-bottom--text">Kolekcja 1</p>
+                            <p class="shopsite-right__item-bottom--price">199,99 PLN</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="shopsite-right__item">
+                    <div class="shopsite-right__item-heart"></div>
+                    <a class="shopsite-right__item-link" href="item.html">
+                        <div class="shopsite-right__item-top"></div>
+                        <div class="shopsite-right__item-bottom">
+                            <h3 class="shopsite-right__item-bottom--title">Czarna koszulka</h3>
+                            <p class="shopsite-right__item-bottom--text">Kolekcja 1</p>
+                            <p class="shopsite-right__item-bottom--price">199,99 PLN</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="shopsite-right__item">
+                    <div class="shopsite-right__item-heart"></div>
+                    <a class="shopsite-right__item-link" href="item.html">
+                        <div class="shopsite-right__item-top"></div>
+                        <div class="shopsite-right__item-bottom">
+                            <h3 class="shopsite-right__item-bottom--title">Czarna koszulka</h3>
+                            <p class="shopsite-right__item-bottom--text">Kolekcja 1</p>
+                            <p class="shopsite-right__item-bottom--price">199,99 PLN</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="shopsite-right__item">
+                    <div class="shopsite-right__item-heart"></div>
+                    <a class="shopsite-right__item-link" href="item.html">
+                        <div class="shopsite-right__item-top"></div>
+                        <div class="shopsite-right__item-bottom">
+                            <h3 class="shopsite-right__item-bottom--title">Czarna koszulka</h3>
+                            <p class="shopsite-right__item-bottom--text">Kolekcja 1</p>
+                            <p class="shopsite-right__item-bottom--price">199,99 PLN</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="dist/js/nav.min.js"></script>
+    <script src="dist/js/shopsite.min.js"></script>
+    <!-- @Include 'footer' -->
+</body>
+
+</html>
