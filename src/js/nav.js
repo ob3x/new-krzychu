@@ -9,8 +9,9 @@ const heartItem = document.querySelectorAll('.heart-box');
 const popupsBox = document.querySelectorAll('.popup-box');
 const notification = document.querySelector('.notification__text');
 const elements = [
-	'Rzecz 1',
-	'Przeglądaj nasze najnowsze wyprzedaże, przeceny aż do 30%!',
+	'Zwrot aż do 14 dni.',
+	'Darmowa dostawa i zwroty przy zamówieniach powyżej 220zł.',
+	'Szacowana dostawa: 3-5 dni roboczych.',
 ]; // Tablica z elementami do wypisania
 let currentIndex = 0; // Zmienna śledząca bieżący indeks
 

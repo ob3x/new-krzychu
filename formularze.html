@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formularz - Ravish | Formularze</title>
+    <title>Ravish | Formularze</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -14,10 +14,93 @@
 </head>
 
 <body>
-    <!-- @Include 'nav' -->
+    <nav class="nav" id="navbar">
+    <div class="wrapper nav-items">
+        <a href="index.html">
+            <div class="nav-logo"></div>
+        </a>
+        <div class="nav-links">
+            <a href="sklep.html" class="nav-links__item">Nowa kolekcja</a>
+            <a href="#" class="nav-links__item">Wyprzedaż</a>
+        </div>
+        <div class="nav-box">
+            <div class="nav-box__item nav-box__item-heart popup"></div>
+            <div class="nav-heart active popup-box">
+                <h3 class="nav-loggin__title">polubione</h3>
+                <div class="heart-box">
+                    <h3 class="nav-heart__title">Lista produktów: 1</h3>
+                    <div class="nav-heart__box">
+                        <img src="dist/img/items1.jpg" alt="koszulka" class="nav-heart__box-item">
+                        <a href="#" class="nav-heart__box-text">
+                            <h3 class="nav-heart__box-text--title">żółta koszulka</h3>
+                            <p class="nav-heart__box-text--item">Koszulki damskie</p>
+                            <p class="nav-heart__box-text--price">99,99 PLN</p>
+                        </a>
+                        <div class="nav-heart__box-img"></div>
+                    </div>
+                    <div class="nav-heart__box">
+                        <img src="dist/img/items1.jpg" alt="koszulka" class="nav-heart__box-item">
+                        <a href="#" class="nav-heart__box-text">
+                            <h3 class="nav-heart__box-text--title">żółta koszulka</h3>
+                            <p class="nav-heart__box-text--item">Koszulki damskie</p>
+                            <p class="nav-heart__box-text--price">99,99 PLN</p>
+                        </a>
+                        <div class="nav-heart__box-img"></div>
+                    </div>
+                </div>
+                <p class="nav-heart__box-error active">Nie dodałeś żadnych ulubionych produktów.</p>
+            </div>
+            <div class="nav-box__item nav-box__item-bucket popup"></div>
+            <div class="nav-bucket active popup-box">
+                <h3 class="nav-loggin__title">twój koszyk</h3>
+                <h3 class="nav-heart__title">Razem do zapłaty: 3000zł</h3>
+                <div class="nav-heart__box">
+                    <img src="dist/img/items2.jpg" alt="koszulka" class="nav-heart__box-item">
+                    <a href="#" class="nav-heart__box-text">
+                        <h3 class="nav-heart__box-text--title">biała koszulka</h3>
+                        <p class="nav-heart__box-text--item">Koszulki damskie</p>
+                        <p class="nav-heart__box-text--price">249,99 PLN</p>
+                    </a>
+                    <div class="nav-heart__box-img"></div>
+                </div>
+                <div class="nav-heart__box">
+                    <img src="dist/img/items2.jpg" alt="koszulka" class="nav-heart__box-item">
+                    <a href="#" class="nav-heart__box-text">
+                        <h3 class="nav-heart__box-text--title">biała koszulka</h3>
+                        <p class="nav-heart__box-text--item">Koszulki damskie</p>
+                        <p class="nav-heart__box-text--price">249,99 PLN</p>
+                    </a>
+                    <div class="nav-heart__box-img"></div>
+                </div>
+                <div class="nav-heart__box">
+                    <img src="dist/img/items2.jpg" alt="koszulka" class="nav-heart__box-item">
+                    <a href="#" class="nav-heart__box-text">
+                        <h3 class="nav-heart__box-text--title">biała koszulka</h3>
+                        <p class="nav-heart__box-text--item">Koszulki damskie</p>
+                        <p class="nav-heart__box-text--price">249,99 PLN</p>
+                    </a>
+                    <div class="nav-heart__box-img"></div>
+                </div>
+                <a href="#" class="nav-loggin__btn nav-heart__btn">przejdź do koszyka</a>
+            </div>
+            <a href="logowanie.html">
+                <div class="nav-box__item nav-box__item-account"></div>
+            </a>
+        </div>
+    </div>
+</nav>
+    <section class="notification">
+    <div class="wrapper">
+        <p class="notification__text">Przeglądaj nasze najnowsze wyprzedaże, przeceny aż do 30%!<a
+                class="notification__text-link" href="sklep.html">przegladaj</a></p>
+    </div>
+</section>
     <section class="form">
         <h2 class="form__title">Wyślij formularz</h2>
-        <p class="form__text">Zadowolenie naszych klientów jest dla nas priorytetem. Jeśli z jakiegoś powodu nie jesteś zadowolony z zakupów lub nie pasuje Ci rozmiar, chcemy Cię zapewnić, że możesz zwrócić paczkę zgodnie z naszym regulaminem zwrotów. Twój komfort i satysfakcja są dla naszej marki niezwykle ważne. Dziękujemy za zaufanie i możliwość obsługi!</p>
+        <p class="form__text">Zadowolenie naszych klientów jest dla nas priorytetem. Jeśli z jakiegoś powodu nie jesteś
+            zadowolony z zakupów lub nie pasuje Ci rozmiar, chcemy Cię zapewnić, że możesz zwrócić paczkę zgodnie z
+            naszym regulaminem zwrotów. Twój komfort i satysfakcja są dla naszej marki niezwykle ważne. Dziękujemy za
+            zaufanie i możliwość obsługi!</p>
         <ul class="form-steps">
             <li class="form-steps__item">
                 <span class="form-steps__item-count first-form form-steps__item-count--current">1</span>
@@ -186,14 +269,59 @@
 
         <div class="wrapper sent-form active">
             <h2 class="sent-form__title">Pomyślnie wysłano</h2>
-            <p class="sent-form__text">Dziękujemy za przesłanie formularza! Nasz zespół szybko go przeanalizuje i postara się odpowiedzieć tak szybko, jak to możliwe. W razie dodatkowych pytań, nie wahaj się skontaktować z nami. Dziękujemy za wybór naszej marki!</p>
+            <p class="sent-form__text">Dziękujemy za przesłanie formularza! Nasz zespół szybko go przeanalizuje i
+                postara się odpowiedzieć tak szybko, jak to możliwe. W razie dodatkowych pytań, nie wahaj się
+                skontaktować z nami. Dziękujemy za wybór naszej marki!</p>
         </div>
 
         <button class="form__btn">Przejdź dalej</button>
         <script src="dist/js/form.min.js"></script>
         <script src="dist/js/nav.min.js"></script>
     </section>
-    <!-- @Include 'footer' -->
+    <footer class="footer">
+    <div class="wrapper">
+        <div class="footer-box">
+            <div class="footer-item">
+                <h2 class="footer-item__title">Zasady i warunki</h2>
+                <ul class="footer-item__list">
+                    <li class="footer-item__list-link"><a href="polityka-zwrotow-i-reklamacji.html"
+                            class="footer-item__list-style">Polityka zwrotów i
+                            reklamacji</a>
+                    </li>
+                    <li class="footer-item__list-link"><a href="regulamin.html"
+                            class="footer-item__list-style">Regulamin</a>
+                    </li>
+                    <li class="footer-item__list-link"><a href="polityka-prywatnosci.html"
+                            class="footer-item__list-style">Polityka
+                            prywatności</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h2 class="footer-item__title">Informacje</h2>
+                <ul class="footer-item__list">
+                    <li class="footer-item__list-link"><a href="#" class="footer-item__list-style">FAQ</a>
+                    </li>
+                    <li class="footer-item__list-link"><a href="#" class="footer-item__list-style">O nas</a></li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h2 class="footer-item__title">Obserwuj nas</h2>
+                <ul class="footer-item__list">
+                    <li class="footer-item__list-link"><a href="#" class="footer-item__list-style">Facebook</a></li>
+                    <li class="footer-item__list-link"><a href="#" class="footer-item__list-style">Instagram</a>
+                    </li>
+                    <li class="footer-item__list-link"><a href="#" class="footer-item__list-style">Twitter</a></li>
+                    <li class="footer-item__list-link"><a href="#" class="footer-item__list-style">Tiktok</a></li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h2 class="footer-item__title footer-item__btn--title">Napisz do nas</h2>
+                <a href="formularze.html" class="footer-item__btn">Otwórz formularz</a>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 
 </html>

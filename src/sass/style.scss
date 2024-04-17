@@ -443,9 +443,28 @@ body {
 				letter-spacing: 0.05em;
 			}
 			&-btn {
+				position: relative;
+				font-size: 1.6rem;
+				letter-spacing: 0.05em;
 				text-decoration: none;
-				font-size: 1.5rem;
+				text-transform: uppercase;
 				color: $black;
+				&::after {
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					width: 100%;
+					height: 0.1em;
+					background-color: $black;
+					content: '';
+					transform: scale(0);
+					transform-origin: right;
+					transition: transform 0.3s;
+				}
+				&:hover::after {
+					transform: scale(1);
+					transform-origin: left;
+				}
 			}
 		}
 	}
@@ -893,15 +912,15 @@ body {
 			align-items: center;
 			font-size: 1.6rem;
 			&-text {
-				font-size: 1.8rem;
+				font-size: 2rem;
 			}
 			&--box {
-				padding: .3em 0;
-				margin: 0 .3em 0 .5em;
+				padding: 0.5em 0.3em;
+				margin: 0 0.3em 0 0.5em;
 				text-align: center;
-				letter-spacing: .07em;
+				letter-spacing: 0.07em;
 				background-color: transparent;
-				border: .1em solid $grey;
+				border: 0.1em solid $grey;
 				font-weight: bold;
 				&-option {
 					font-weight: bold;
@@ -909,8 +928,8 @@ body {
 			}
 			&-icon {
 				background-image: url(../../src/img/src/filter.svg);
-				width: 1.5em;
-				height: 1.5em;
+				width: 2em;
+				height: 2em;
 			}
 		}
 	}
@@ -933,6 +952,7 @@ body {
 				top: 1.5em;
 				right: 1.5em;
 				background-image: url(../../src/img/src/heart.svg);
+				background-repeat: no-repeat;
 				width: 3em;
 				height: 3em;
 			}
@@ -974,6 +994,16 @@ body {
 		width: 90em;
 		height: 70em;
 		border: 0.1em solid $black;
+		&__titlesbox {
+			display: flex;
+			align-items: center;
+			&-img {
+				margin-right: 1em;
+				background-image: url(../../src/img/src/filter-2.svg);
+				width: 3em;
+				height: 3em;
+			}
+		}
 		&__box {
 			margin: 3em 0;
 		}
