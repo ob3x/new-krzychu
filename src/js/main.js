@@ -1,6 +1,12 @@
 const trailerVideo = document.querySelector('.trailer-box__stop');
-const heartRed = document.querySelectorAll('.news-item-img__heart');
+const heartsRed = document.querySelectorAll('.news-box__item-heart');
 
 trailerVideo.addEventListener('click', () => {
 	trailerVideo.classList.toggle('play');
 });
+
+heartsRed.forEach(heart => {
+	heart.addEventListener('click', () => {
+		heart.classList.toggle('heart-red')
+	})
+})

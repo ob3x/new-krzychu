@@ -23,7 +23,7 @@
         </a>
         <div class="nav-links">
             <a href="sklep.html" class="nav-links__item">Nowa kolekcja</a>
-            <a href="#" class="nav-links__item">Wyprzedaż</a>
+            <a href="sklep.html" class="nav-links__item">Wyprzedaż</a>
         </div>
         <div class="nav-box">
             <div class="nav-box__item nav-box__item-heart popup"></div>
@@ -91,6 +91,25 @@
         </div>
     </div>
 </nav>
+<section class="newsletter active">
+    <div class="newsletter-box">
+        <img src="dist/img/model.jpg" alt="" class="newsletter-img">
+        <div class="newsletter-right">
+            <div class="newsletter-right__logo"></div>
+            <h2 class="newsletter-right__title">Zapisz się do newslettera!</h2>
+            <p class="newsletter-right__text">I odbierz 5% Rabatu na pierwsze zakupy za minimum 120 zł</p>
+            <p class="newsletter-right__text">Otrzymuj informacje o wyprzedażach oraz specjalne promocje.</p>
+            <p class="newsletter-right__text">
+                Oczaruj ich Swoim stylem!”</p>
+            <input type="email" class="newsletter-right__input" placeholder="Wpisz swój adres e-mail">
+            <button class="newsletter-right__btn">Zapisz się</button>
+            <div class="newsletter__x"></div>
+        </div>
+    </div>
+    <div class="overlay"></div>
+</section>
+<div class="sticky-logo"></div>
+<a class="sticky-bottom" href="#"></a>
     <section class="notification">
     <div class="wrapper">
         <p class="notification__text">Przeglądaj nasze najnowsze wyprzedaże, przeceny aż do 30%!<a
@@ -108,10 +127,72 @@
             </div>
         </div>
     </section>
+    <section class="cookies">
+        <div class="cookies-first">
+            <h2 class="cookies__title">ZARZĄDZAJ PLIKAMI COOKIE</h2>
+            <p class="cookies__text-item">Używamy trzech rodzajów plików cookie: niezbędnych i koniecznych, służących do
+                analizy danych oraz do personalizowania reklam, aby zapewnić Ci kompleksowe korzystanie z naszej
+                platformy. Abyśmy mogli stale ulepszać i dostosowywać naszą stronę do Twoich potrzeb, korzystamy również
+                z opcjonalnego monitorowania w celach analitycznych i marketingowych. Dzięki temu możemy dostarczyć Ci
+                lepsze treści i ciekawsze oferty. Twoja zgoda na używanie plików cookie spowoduje ich ustawienie na
+                Twoim urządzeniu oraz utworzenie profilu użytkownika w celu poprawy jakości obsługi. Jednakże, jeśli
+                zdecydujesz się nie wyrazić zgody, może to ograniczyć dostęp do niektórych funkcji naszej strony oraz
+                spowodować mniej dopasowaną funkcjonalność pod kątem Twoich potrzeb. </p>
+            <p class="cookies__text-item">Więcej informacji na temat plików
+                cookie znajdziesz w naszej <a class="cookies-style" href="polityka-prywatnosci.html" style="color: black">Polityce prywatności.</a></p>
+            <div class="cookies__box">
+                <button class="cookies__box-item">Ustawienia plików cookie</button>
+                <button class="cookies__box-item">Akceptuj wszystkie pliki cookie</button>
+            </div>
+        </div>
+        <div class="cookies-secound active">
+            <h2 class="cookies__title">ZARZĄDZAJ PLIKAMI COOKIE</h2>
+            <div class="cookies-form">
+                <input type="checkbox" class="cookies-form__input">
+                <div class="cookies-form__text">
+                    <h3 class="cookies-form__text-title">Niezbędne i konieczne</h3>
+                    <h3 class="cookies-form__text-item">Te pliki cookie są niezbędne do prawidłowego działania strony
+                        internetowej. Służą one do zapamiętywania preferencji użytkownika dotyczących języka,
+                        lokalizacji czy logowania. Dzięki nim strona może prawidłowo funkcjonować i zapewnić
+                        użytkownikowi pełne doświadczenie korzystania z sklepu Ravish.</h3>
+                </div>
+            </div>
+            <div class="cookies-form">
+                <input type="checkbox" class="cookies-form__input">
+                <div class="cookies-form__text">
+                    <h3 class="cookies-form__text-title">Analizowanie danych</h3>
+                    <h3 class="cookies-form__text-item">Te pliki cookie zbierają informacje na temat sposobu interakcji
+                        użytkowników ze stroną internetową. Mogą rejestrować liczbę odwiedzin, czas spędzony na stronie,
+                        ścieżki nawigacyjne oraz inne dane analityczne. Te informacje są wykorzystywane do analizy
+                        zachowań użytkowników i poprawy jakości oraz wydajności sklepu Ravish.</h3>
+                </div>
+            </div>
+            <div class="cookies-form">
+                <input type="checkbox" class="cookies-form__input">
+                <div class="cookies-form__text">
+                    <h3 class="cookies-form__text-title">Personalizowane reklamy</h3>
+                    <h3 class="cookies-form__text-item">Te pliki cookie są wykorzystywane do gromadzenia informacji o
+                        preferencjach i działaniach użytkownika w celu personalizowania reklam wyświetlanych na stronach
+                        internetowych. Dzięki nim reklamy mogą być bardziej dopasowane do zainteresowań użytkownika, co
+                        z kolei może zwiększyć skuteczność reklamowania produktów lub usług.</h3>
+                </div>
+            </div>
+            <div class="cookies-form">
+                <h3 class="cookies-form__text-item">Więcej informacji na temat plików cookie znajdziesz w naszej
+                    Polityce prywatności.</h3>
+            </div>
+
+            <div class="cookies__box">
+                <button class="cookies__box-item">ZAPISZ MOJE PREFERENCJE</button>
+                <button class="cookies__box-item">ZAAKCEPTUJ WSZYSTKIE PLIKI COOKIE</button>
+            </div>
+        </div>
+    </section>
     <section class="news">
         <h2 class="news__title">Przeglądaj nowości</h2>
         <div class="news-box">
             <div class="news-box__item">
+                <div class="news-box__item-heart"></div>
                 <a class="news-item" href="item.html">
                     <div class="news-item-img">
                     </div>
@@ -122,6 +203,7 @@
                 </a>
             </div>
             <div class="news-box__item">
+                <div class="news-box__item-heart"></div>
                 <a class="news-item" href="item.html">
                     <div class="news-item-img">
                     </div>
@@ -132,6 +214,7 @@
                 </a>
             </div>
             <div class="news-box__item">
+                <div class="news-box__item-heart"></div>
                 <a class="news-item" href="item.html">
                     <div class="news-item-img">
                     </div>
@@ -142,6 +225,7 @@
                 </a>
             </div>
             <div class="news-box__item">
+                <div class="news-box__item-heart"></div>
                 <a class="news-item" href="item.html">
                     <div class="news-item-img">
                     </div>
@@ -152,6 +236,7 @@
                 </a>
             </div>
             <div class="news-box__item">
+                <div class="news-box__item-heart"></div>
                 <a class="news-item" href="item.html">
                     <div class="news-item-img">
                     </div>
@@ -162,6 +247,7 @@
                 </a>
             </div>
             <div class="news-box__item">
+                <div class="news-box__item-heart"></div>
                 <a class="news-item" href="item.html">
                     <div class="news-item-img">
                     </div>
@@ -190,7 +276,7 @@
                     <h2 class="sesion-box__item-title">Dash of extravagance</h2>
                     <p class="sesion-box__item-text">Stand out from the crowd in eye-catching jewellery from top brands
                     </p>
-                    <a href="sesion.html" class="sesion-box__item-btn">Przeglądaj</a>
+                    <a href="sesje-zdjeciowe.html" class="sesion-box__item-btn">Przeglądaj</a>
                 </div>
             </div>
             <div class="sesion-box__item">
@@ -198,7 +284,7 @@
                 <div class="sesion-box__texts">
                     <h2 class="sesion-box__item-title">Dress to impress</h2>
                     <p class="sesion-box__item-text">Special occasions deserve special styles!</p>
-                    <a href="sesion.html" class="sesion-box__item-btn">Przeglądaj</a>
+                    <a href="sesje-zdjeciowe.html" class="sesion-box__item-btn">Przeglądaj</a>
                 </div>
             </div>
             <div class="sesion-box__item">
@@ -208,7 +294,7 @@
                     <p class="sesion-box__item-text">These bag models will successfully play a leading role in your
                         looks
                     </p>
-                    <a href="sesion.html" class="sesion-box__item-btn">Przeglądaj</a>
+                    <a href="sesje-zdjeciowe.html" class="sesion-box__item-btn">Przeglądaj</a>
                 </div>
             </div>
         </div>
